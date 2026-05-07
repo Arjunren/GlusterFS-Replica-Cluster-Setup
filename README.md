@@ -27,8 +27,7 @@ sudo mkdir -p /gluster/data
 
 ## 🌐 Cluster Configuration (Node 1 Only)
 
-Perform these steps on **Node 1** to establish the peer relationship and initialize the replicated volume. Replace `[name_of_volume]` with your preferred volume name.
-
+Perform these steps on **Node 1** to establish the peer relationship and initialize the replicated volume. Replace `[name_of_volume]` with your preferred volume name and replace the example IPs with the ones identified via ip a in node 1 and node 2.
 1.  **Probe Peer:**
     `gluster peer probe 192.168.1.3`
 2.  **Check Status:**
